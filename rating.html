@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate Our Service</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="pageTitle">Rate Our Service</h1>
+        <div id="ratings" class="star-rating">
+            <span class="star" onmouseover="highlightStars(1)" onmouseout="resetStars()" onclick="rate(1)">&#9733;</span>
+            <span class="star" onmouseover="highlightStars(2)" onmouseout="resetStars()" onclick="rate(2)">&#9733;</span>
+            <span class="star" onmouseover="highlightStars(3)" onmouseout="resetStars()" onclick="rate(3)">&#9733;</span>
+            <span class="star" onmouseover="highlightStars(4)" onmouseout="resetStars()" onclick="rate(4)">&#9733;</span>
+            <span class="star" onmouseover="highlightStars(5)" onmouseout="resetStars()" onclick="rate(5)">&#9733;</span>
+        </div>
+        <div id="feedback" style="display: none;">
+            <textarea id="feedbackText" placeholder="Tell us more"></textarea>
+            <div class="cont">    
+                <button class="btn" onclick="submitFeedback()"><span>Submit</span><img src="https://i.cloudup.com/2ZAX3hVsBE-3000x3000.png" height="62" width="62"></button>
+            </div>
+        </div>
+        <div id="feedbackConfirmation" style="display: none;">
+            <a href="https://yewdigitallock.com.sg/contact-us/">Contact us for more assistance</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
